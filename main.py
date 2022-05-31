@@ -46,7 +46,8 @@ def main(c):
     Raises:
         AssertError: if incorrect args are given
     """
-
+    assert type(c) == int and c > 0 
+    
     # Confine search by number of digits,
     #   as only numbers of same digit-count could permute to each other.
     n = 1
