@@ -11,9 +11,10 @@
 
 from collections import defaultdict
 from math import ceil, floor
+from typing import List
 
 
-def digit_key(n):
+def digit_key(n: int) -> str:
     """
     Returns the digits of `n` as an ordered string.
 
@@ -30,7 +31,7 @@ def digit_key(n):
     return ''.join(sorted(list(str(n))))
 
 
-def main(c):
+def main(c: int) -> List[int]:
     """
     Returns the first (least) set of exactly `c` cubes
       whose digits permute to each other,
